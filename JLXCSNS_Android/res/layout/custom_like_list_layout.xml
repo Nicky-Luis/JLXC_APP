@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.jlxc.app"
+    android:id="@+id/layout_like_list_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/head_image_size_medium"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/item_interior_space_small" >
+
+    <!-- 赞的icon -->
+
+    <ImageView
+        android:id="@+id/tv_custom_likelist_head_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:src="@drawable/like_icon" />
+
+    <com.jlxc.app.base.ui.view.RoundImageView
+        android:id="@+id/iv_like_head_img_A"
+        android:layout_width="@dimen/head_image_size_small"
+        android:layout_height="@dimen/head_image_size_small"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@id/tv_custom_likelist_head_icon"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher"
+        app:rect_adius="1dp" />
+
+    <com.jlxc.app.base.ui.view.RoundImageView
+        android:id="@+id/iv_like_head_img_B"
+        android:layout_width="@dimen/head_image_size_small"
+        android:layout_height="@dimen/head_image_size_small"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@id/iv_like_head_img_A"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher"
+        app:rect_adius="1dp" />
+
+    <com.jlxc.app.base.ui.view.RoundImageView
+        android:id="@+id/iv_like_head_img_C"
+        android:layout_width="@dimen/head_image_size_small"
+        android:layout_height="@dimen/head_image_size_small"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@id/iv_like_head_img_B"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher"
+        app:rect_adius="1dp" />
+
+    <com.jlxc.app.base.ui.view.RoundImageView
+        android:id="@+id/iv_like_head_img_D"
+        android:layout_width="@dimen/head_image_size_small"
+        android:layout_height="@dimen/head_image_size_small"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@id/iv_like_head_img_C"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher"
+        app:rect_adius="1dp" />
+
+    <com.jlxc.app.base.ui.view.RoundImageView
+        android:id="@+id/iv_like_head_img_E"
+        android:layout_width="@dimen/head_image_size_small"
+        android:layout_height="@dimen/head_image_size_small"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@id/iv_like_head_img_D"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher"
+        app:rect_adius="1dp" />
+
+    <com.jlxc.app.base.ui.view.RoundImageView
+        android:id="@+id/iv_like_head_img_F"
+        android:layout_width="@dimen/head_image_size_small"
+        android:layout_height="@dimen/head_image_size_small"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@id/iv_like_head_img_E"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher"
+        app:rect_adius="1dp" />
+
+    <com.jlxc.app.base.ui.view.RoundImageView
+        android:id="@+id/iv_like_head_img_G"
+        android:layout_width="@dimen/head_image_size_small"
+        android:layout_height="@dimen/head_image_size_small"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@id/iv_like_head_img_F"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher"
+        app:rect_adius="1dp" />
+
+    <com.jlxc.app.base.ui.view.RoundImageView
+        android:id="@+id/iv_like_head_img_H"
+        android:layout_width="@dimen/head_image_size_small"
+        android:layout_height="@dimen/head_image_size_small"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@id/iv_like_head_img_G"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher"
+        app:rect_adius="1dp" />
+
+    <com.jlxc.app.base.ui.view.RoundImageView
+        android:id="@+id/iv_like_head_img_I"
+        android:layout_width="@dimen/head_image_size_small"
+        android:layout_height="@dimen/head_image_size_small"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@id/iv_like_head_img_H"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher"
+        app:rect_adius="1dp" />
+
+    <com.jlxc.app.base.ui.view.RoundImageView
+        android:id="@+id/iv_like_head_img_J"
+        android:layout_width="@dimen/head_image_size_small"
+        android:layout_height="@dimen/head_image_size_small"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@id/iv_like_head_img_I"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher"
+        app:rect_adius="1dp" />
+
+    <com.jlxc.app.base.ui.view.RoundImageView
+        android:id="@+id/iv_like_head_img_K"
+        android:layout_width="@dimen/head_image_size_small"
+        android:layout_height="@dimen/head_image_size_small"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@id/iv_like_head_img_J"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher"
+        app:rect_adius="1dp" />
+
+    <TextView
+        android:id="@+id/tv_custom_like_all_person"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/all_like_person"
+        android:gravity="center"
+        android:text="22" />
+
+</RelativeLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.jlxc.app"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_deep_white_click"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <com.jlxc.app.base.ui.view.RoundImageView
+            android:id="@+id/head_image_view"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:src="@drawable/abc_ab_bottom_solid_light_holo"
+            app:rect_adius="2dip" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/name_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="姓名"
+                android:textColor="@color/main_brown"
+                android:textSize="@dimen/font_size_medium" />
+
+            <TextView
+                android:id="@+id/content_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_toLeftOf="@+id/framelayout"
+                android:text="内容内容内容内容内容内容内容内容容内容内"
+                android:textColor="@color/main_deep_black"
+                android:textSize="@dimen/font_size_small" />
+
+            <TextView
+                android:id="@+id/time_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/name_text_view"
+                android:layout_below="@+id/content_text_view"
+                android:layout_marginTop="5dp"
+                android:text="2015-05-05"
+                android:textColor="@color/main_deep_gary"
+                android:textSize="@dimen/font_size_tiny" />
+
+            <FrameLayout
+                android:id="@+id/framelayout"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:background="@color/main_light_gary" >
+
+                <TextView
+                    android:id="@+id/news_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="1dip"
+                    android:ellipsize="end"
+                    android:maxHeight="55dip"
+                    android:maxLines="3"
+                    android:maxWidth="55dip"
+                    android:text="内容内容内容内"
+                    android:textColor="@color/main_deep_black"
+                    android:textSize="@dimen/font_size_tiny" />
+
+                <ImageView
+                    android:id="@+id/news_image_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/abc_ab_bottom_solid_light_holo"
+                    android:visibility="gone" />
+            </FrameLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_marginLeft="10dip"
+        android:background="@color/main_light_gary" />
+
+</LinearLayout>

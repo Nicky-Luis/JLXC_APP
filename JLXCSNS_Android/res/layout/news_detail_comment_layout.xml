@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.jlxc.app"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/view_divier"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/main_thin_white" />
+
+    <LinearLayout
+        android:id="@+id/layout_news_detail_comment_root_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/selector_news_detail_comment_click"
+        android:clickable="true"
+        android:gravity="top"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/item_interior_space_little"
+        android:paddingRight="@dimen/item_interior_space_medium"
+        android:paddingTop="@dimen/item_interior_space_medium" >
+
+        <com.jlxc.app.base.ui.view.RoundImageView
+            android:id="@+id/iv_comment_head"
+            android:layout_width="@dimen/head_image_size_medium"
+            android:layout_height="@dimen/head_image_size_medium"
+            android:layout_marginLeft="@dimen/news_item_margins_left"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher"
+            app:rect_adius="2dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/item_interior_space_medium"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/item_interior_space_little" >
+
+            <TextView
+                android:id="@+id/txt_news_detail_comment_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="朱旺"
+                android:textColor="@color/main_brown"
+                android:textSize="@dimen/font_size_small" />
+
+            <TextView
+                android:id="@+id/txt_news_detail_comment_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/txt_news_detail_comment_name"
+                android:layout_alignParentRight="true"
+                android:text="12:23"
+                android:textColor="@color/main_light_black"
+                android:textSize="@dimen/font_size_tiny" />
+
+            <TextView
+                android:id="@+id/txt_news_detail_comment_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_news_detail_comment_name"
+                android:gravity="center_vertical"
+                android:text="哈哈哈哈 你是个大傻逼"
+                android:textColor="@color/main_light_black"
+                android:textSize="@dimen/font_size_small" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

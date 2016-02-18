@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" xmlns:app="http://schemas.android.com/apk/res/com.jlxc.app">
+
+   <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_white"
+    android:paddingTop="10dp">
+    
+    <com.jlxc.app.base.ui.view.RoundImageView
+	    app:rect_adius="2dip"
+        android:id="@+id/iv_my_friend_list_head"
+        android:layout_width="45dip"
+		android:layout_height="45dip"
+		android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tv_my_friend_name"
+			android:layout_alignTop="@+id/iv_my_friend_list_head"
+	        android:layout_marginTop="3dip"
+	        android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_size_small"
+            android:textColor="@color/main_deep_black"
+			android:layout_toRightOf="@+id/iv_my_friend_list_head"
+            android:text="昵称" />
+
+
+        <TextView
+            android:id="@+id/tv_my_friend_school"
+            android:textSize="@dimen/font_size_tiny"
+            android:textColor="@color/main_deep_gary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_my_friend_name"
+           	android:layout_alignBottom="@id/iv_my_friend_list_head"
+            android:text="学校" />
+		<View
+            android:layout_width="fill_parent"
+            android:layout_below="@+id/iv_my_friend_list_head"
+            android:layout_height="1dip"
+            android:layout_marginTop="10dip"
+            android:layout_marginLeft="10dip"
+			android:background="@color/main_light_gary" />
+			 	
+	    <Button
+	        android:focusable="false"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:layout_marginRight="15dip"
+	        android:id="@+id/attent_state_btn"
+	        android:textColor="@color/main_white"
+	        android:textSize="@dimen/font_size_small"
+	        android:layout_width="75dip"
+	        android:layout_height="wrap_content"
+	        android:padding="7dip"
+	        android:text="相互关注"
+	        android:background="@color/main_gary" />			
+	</RelativeLayout>
+   
+</LinearLayout>

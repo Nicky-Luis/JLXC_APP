@@ -1,0 +1,69 @@
+<com.jlxc.app.base.ui.view.KeyboardLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/news_detail_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_light_white"
+    android:orientation="vertical"
+    android:windowSoftInputMode="adjustResize" >
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/layout_title_bar" />
+
+    <!-- 主页动态的listview -->
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/news_detail_listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:cacheColorHint="#00000000"
+        android:divider="#00000000"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true" >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+    <LinearLayout
+        android:id="@+id/reply_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/send_comment_background"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:padding="@dimen/item_interior_space_small" >
+
+        <EditText
+            android:id="@+id/edt_comment_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:paddingLeft="@dimen/item_interior_space_small"
+            android:background="@drawable/comment_edittext_background"
+            android:hint="来条神评论..."
+            android:inputType="textMultiLine"
+            android:maxLength="140"
+            android:textColor="@color/main_deep_black"
+            android:textSize="@dimen/font_size_secondary" />
+
+        <View
+            android:id="@+id/view_space"
+            android:layout_width="3dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/btn_comment_send"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@drawable/selector_send_commnt_btn"
+            android:paddingLeft="@dimen/item_interior_space_small"
+            android:text="发送"
+            android:textColor="@color/main_brown"
+            android:textSize="@dimen/font_size_medium" />
+    </LinearLayout>
+
+</com.jlxc.app.base.ui.view.KeyboardLayout>

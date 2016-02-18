@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.jlxc.app"
+    android:id="@+id/layout_my_news_list_body_rootview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_light_white"
+    android:clickable="true"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/item_interior_space_medium"
+    android:paddingRight="@dimen/item_interior_space_medium" >
+
+    <LinearLayout
+        android:layout_width="@dimen/item_interior_space_huge"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <View
+            android:id="@+id/iv_time_line_backgroung"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/time_line"
+            android:scaleType="centerInside" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/item_interior_space_medium"
+        android:background="@drawable/multi_background_body"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/item_interior_space_medium"
+        android:paddingRight="@dimen/item_interior_space_medium" >
+
+        <TextView
+            android:id="@+id/txt_my_news_list_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="内容"
+            android:textColor="@color/main_deep_black"
+            android:textIsSelectable="true"
+            android:textSize="@dimen/font_size_medium" />
+
+        <com.jlxc.app.news.ui.view.MultiImageView
+            android:id="@+id/miv_my_newslist_images"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:islargesize="false" >
+        </com.jlxc.app.news.ui.view.MultiImageView>
+
+        <TextView
+            android:id="@+id/txt_my_news_list_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/item_interior_space_small"
+            android:drawableStart="@drawable/localtion"
+            android:paddingTop="@dimen/news_item_margins_top"
+            android:text="地理位置"
+            android:textColor="@color/main_light_blue"
+            android:textSize="@dimen/font_size_small" />
+    </LinearLayout>
+
+</LinearLayout>

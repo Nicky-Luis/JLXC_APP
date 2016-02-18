@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_corner_background"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dip"
+        android:paddingLeft="20dip"
+        android:paddingTop="10dip"
+        android:text="修改您的性别"
+        android:textColor="@color/main_brown"
+        android:textSize="@dimen/font_size_large" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="@color/main_light_gary" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/boy_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/selector_deep_white_click"
+            android:gravity="center_vertical"
+            android:paddingLeft="17dp"
+            android:text="帅锅"
+            android:drawableLeft="@drawable/sex_boy"
+            android:drawablePadding="5dp"
+            android:textColor="@color/main_deep_black"
+            android:textSize="@dimen/font_size_medium" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@color/main_light_gary" />
+
+        <TextView
+            android:id="@+id/girl_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/selector_deep_white_click"
+            android:gravity="center_vertical"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/sex_girl"
+            android:paddingLeft="17dp"
+            android:text="妹子"
+            android:textColor="@color/main_deep_black"
+            android:textSize="@dimen/font_size_medium" />
+    </LinearLayout>
+
+</LinearLayout>

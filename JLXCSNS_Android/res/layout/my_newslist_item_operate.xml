@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_light_white"
+    android:clickable="true"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/item_interior_space_medium"
+    android:paddingRight="@dimen/item_interior_space_medium" >
+
+    <LinearLayout
+        android:layout_width="@dimen/item_interior_space_huge"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <View
+            android:id="@+id/iv_time_line_backgroung"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/time_line"
+            android:scaleType="centerInside" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_my_news_list_operate_rootview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:paddingBottom="@dimen/item_interior_space_medium"
+        android:paddingLeft="@dimen/item_interior_space_medium" >
+
+        <ImageView
+            android:id="@+id/imageView_background_buttom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btn_my_news_list_reply"
+            android:scaleType="fitStart"
+            android:src="@drawable/multi_background_buttom" />
+
+        <!-- 点赞按钮 -->
+
+        <com.jlxc.app.news.ui.view.LikeButton
+            android:id="@+id/btn_my_news_list_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/item_interior_space_medium" />
+        <!-- 评论按钮 -->
+
+        <com.jlxc.app.news.ui.view.CommentButton
+            android:id="@+id/btn_my_news_list_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/btn_my_news_list_like" >
+        </com.jlxc.app.news.ui.view.CommentButton>
+
+        <TextView
+            android:id="@+id/tv_comment_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:text="评论数"
+            android:textColor="@color/main_char_gary"
+            android:textSize="@dimen/font_size_tiny" />
+
+        <TextView
+            android:id="@+id/tv_like_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv_comment_count"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tv_comment_count"
+            android:text="点赞数"
+            android:textColor="@color/main_char_gary"
+            android:textSize="@dimen/font_size_tiny" />
+    </RelativeLayout>
+
+</LinearLayout>

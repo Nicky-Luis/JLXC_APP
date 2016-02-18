@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/register_activity"
+    android:gravity="center_horizontal">
+    
+	<ImageView
+	    android:src="@drawable/login_back_image"
+	    android:scaleType="centerCrop" 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"/> 
+
+    <include layout="@layout/layout_title_bar" />
+
+    
+    <TextView
+        android:id="@+id/phone_prompt_textview"
+        android:textSize="@dimen/font_size_medium"
+        android:textColor="@color/main_deep_black"   
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dip"        
+        android:layout_width="280dip"
+        android:layout_height="wrap_content"
+        android:text="@string/str_register_phone_prompt" />    
+    
+    <LinearLayout 
+        android:id="@+id/verificationcode_layout"
+        android:layout_marginTop="150dip"
+        android:layout_width="280dip"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+		android:gravity="center"
+        android:layout_height="wrap_content">
+     <EditText
+         android:id="@+id/verificationcode_edittext"
+         android:layout_width="200dip"
+         android:layout_height="wrap_content"
+         android:drawablePadding="10dp"
+         android:maxLength="6"
+         android:padding="5dip"
+         android:background="@color/main_clear"
+         android:hint="请输入验证码"
+         android:textColorHint="@color/login_edit_hint_color"   
+         android:textColor="@color/main_deep_black"      
+         android:singleLine="true"
+         android:textSize="@dimen/font_size_medium" />  
+    <TextView
+        android:id="@+id/revalidated_textview"
+        android:textSize="@dimen/font_size_small"
+        android:textColor="@color/main_brown"
+        android:background="@drawable/login_button"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:text="@string/str_reacquire_verification" />             
+     
+    </LinearLayout>
+    
+     <ImageView
+         android:layout_alignLeft="@+id/verificationcode_layout"
+         android:layout_below="@+id/verificationcode_layout" 
+         android:background="@drawable/login_edit_text_view"
+         android:layout_marginTop="5dip"
+         android:layout_width="280dip"
+         android:layout_height="1dip"/>        
+    
+     <Button
+         android:layout_centerHorizontal="true"
+         android:id="@+id/next_button"
+         android:layout_below="@id/verificationcode_layout"
+         android:textSize="@dimen/font_size_small"
+         android:textColor="@color/main_brown"
+         android:layout_width="280dip"
+         android:background="@drawable/login_button"
+         android:layout_height="45dip"
+         android:layout_marginTop="30dip"
+         android:text="下一步" />       
+     
+</RelativeLayout>

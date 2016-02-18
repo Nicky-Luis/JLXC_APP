@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.jlxc.app"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_white"
+    android:paddingTop="10dp">
+	    <com.jlxc.app.base.ui.view.RoundImageView
+	        app:rect_adius="2dip"
+	        android:id="@+id/head_image_view"
+	        android:layout_width="45dip"
+	        android:layout_height="45dip"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginLeft="10dp"
+	        android:src="@drawable/abc_ab_bottom_solid_light_holo" />
+	
+	    <TextView
+	        android:id="@+id/name_text_view"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignTop="@+id/head_image_view"
+	        android:layout_marginTop="3dip"
+	        android:layout_marginLeft="10dp"
+	        android:textSize="@dimen/font_size_small"
+	        android:textColor="@color/main_deep_black"
+	        android:layout_toRightOf="@+id/head_image_view"
+	        android:text="测试姓名" />
+
+	    <TextView
+	        android:id="@+id/sign_text_view"
+	        android:layout_width="150dip"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/font_size_tiny"
+	        android:layout_alignLeft="@+id/name_text_view"
+	        android:layout_alignBottom="@id/head_image_view"
+	        android:textColor="@color/main_deep_gary"
+	        android:singleLine="true"
+	        android:ellipsize = "end"
+	        android:text="签名在这里" />
+
+	    <Button
+	        android:id="@+id/add_image_button"
+	        android:layout_width="75dip"
+	        android:layout_height="wrap_content"
+	        android:layout_marginRight="10dip"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:padding="7dip"
+		    android:text="关注"
+		    android:background="@color/main_gary"  
+		    android:textColor="@color/main_white"
+		    android:textSize="@dimen/font_size_small" />
+	    
+	    <ImageView
+	        android:id="@+id/sex_image_view"
+	        android:src="@drawable/sex_boy"
+	        android:layout_width="12dip"
+	        android:layout_height="12dip"
+	        android:layout_marginTop="3dip"
+	        android:layout_alignTop="@+id/name_text_view"
+	        android:layout_marginLeft="5dp"
+	        android:layout_toRightOf="@+id/name_text_view" />
+
+		<View
+            android:layout_width="fill_parent"
+            android:layout_below="@+id/head_image_view"
+            android:layout_height="1dip"
+            android:layout_marginTop="10dip"
+            android:layout_marginLeft="10dip"
+			android:background="@color/main_light_gary" />		    
+	    
+	</RelativeLayout>
+    
+</LinearLayout>
+

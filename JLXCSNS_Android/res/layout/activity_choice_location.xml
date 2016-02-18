@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/main_light_white"
+    android:orientation="vertical">
+
+	<include layout="@layout/layout_title_bar" />
+
+	<Button
+	    android:layout_marginTop="10dip"
+	    android:layout_marginLeft="10dip"
+	    android:layout_marginRight="10dip"
+		android:id="@+id/no_postion_btn"	
+	    android:layout_width="match_parent"
+	    android:textColor="@color/main_deep_black"
+	    android:background="@color/main_white"
+	    android:text="不显示"
+	    android:layout_height="50dip"/>
+	
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:layout_marginTop="10dip"
+        android:id="@+id/location_refresh_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="#19000000"
+        android:dividerHeight="0dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true" />
+    
+</LinearLayout>

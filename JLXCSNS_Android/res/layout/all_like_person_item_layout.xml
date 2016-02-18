@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.jlxc.app"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center|left"
+    android:orientation="horizontal"
+    android:background="@drawable/selector_deep_white_click"
+    android:padding="10dp" >
+
+    <com.jlxc.app.base.ui.view.RoundImageView
+        android:id="@+id/iv_all_like_person_item_head"
+        android:layout_width="@dimen/head_image_size_large"
+        android:layout_height="@dimen/head_image_size_large"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher"
+        app:rect_adius="2dp" />
+
+    <TextView
+        android:id="@+id/tv_all_like_person_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="昵称" />
+
+</LinearLayout>

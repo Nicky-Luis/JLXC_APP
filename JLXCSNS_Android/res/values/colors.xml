@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="color_0">#dedede</color>
+    <color name="color_1">#7cc576</color>
+    <color name="color_2">#2a4253</color>
+    <color name="color_3">#f26d7e</color>
+    <color name="color_4">#a286c0</color>
+    <color name="province_line_border">#00C7C7C7</color>
+    <color name="transparent">#00000000</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+
+    <!-- 上面都是测试用的颜色 下面是正常UI配色 -->
+    <!-- 主黄色 -->
+    <color name="main_yellow">#ffc400</color>
+    <!-- 主褐色 -->
+    <color name="main_brown">#86542f</color>
+    <!-- 主橘色 -->
+    <color name="main_orange">#ff8400</color>
+    <!-- 纯白色 -->
+    <color name="main_deep_white">#FFFFFF</color>
+    <!-- 微白色 -->
+    <color name="main_thin_white">#e0e0e0</color>
+    <!-- 浅白色 -->
+    <color name="main_light_white">#ebebeb</color>
+    <!-- 主深黑 -->
+    <color name="main_deep_black">#4d4d4d</color>
+    <!-- 主浅黑 -->
+    <color name="main_light_black">#7c7c7c</color>
+
+    <!-- 辅灰色 -->
+    <color name="main_gary">#cccccc</color>
+    <color name="main_blue">#23a6a2</color>
+    <!-- 辅深灰色 -->
+    <color name="main_deep_gary">#999999</color>
+    <!-- 辅浅灰色 -->
+    <color name="main_light_gary">#e6e6e6</color>
+    <!-- 辅肉色 -->
+    <color name="main_flesh">#cfbbac</color>
+    <!-- 辅深蓝色 -->
+    <color name="main_deep_blue">#00adad</color>
+    <!-- 辅白色 -->
+    <color name="main_white">#ffffff</color>
+    <!-- 辅褐色 -->
+    <color name="main_clear_brown">#9986542f</color>
+    <!-- 辅粉色 -->
+    <color name="main_pink">#f898c7</color>
+    <!-- 辅浅蓝色 -->
+    <color name="main_light_blue">#4bcbfa</color>
+    <!-- 辅名片绿色 -->
+    <color name="main_card_green">#2ddd84</color>
+    <!-- 字用灰色 -->
+    <color name="main_char_gary">#808080</color>
+    <!-- 透明灰色 -->
+    <color name="main_clear_gary">#55cccccc</color>
+    <!-- 透明黄色 -->
+    <color name="main_clear_yellow">#88ffc400</color>
+    <!-- 浅黄色 -->
+    <color name="main_thin_yellow">#ffcc00</color>
+    <!-- 透明色 -->
+    <color name="main_clear">#00000000</color>
+    <!-- 登录部分editText颜色 -->
+    <color name="login_edit_hint_color">#f2f2f2</color>
+
+</resources>

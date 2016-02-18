@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_light_white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/item_interior_space_large" >
+
+        <TextView
+            android:id="@+id/tv_add_contact_tips"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/main_deep_white"
+            android:drawablePadding="@dimen/item_interior_space_small"
+            android:drawableTop="@drawable/selector_friend_phonebook_click"
+            android:gravity="center"
+            android:padding="@dimen/item_interior_space_small"
+            android:text="通讯录中的小伙伴"
+            android:textColor="@color/main_light_black"
+            android:textSize="@dimen/font_size_secondary" />
+
+        <View
+            android:id="@+id/view_space"
+            android:layout_width="1dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/tv_add_campus_tips"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/main_deep_white"
+            android:drawablePadding="@dimen/item_interior_space_small"
+            android:drawableTop="@drawable/selector_friend_schoolmate_click"
+            android:gravity="center"
+            android:padding="@dimen/item_interior_space_small"
+            android:text="同校中的小伙伴"
+            android:textColor="@color/main_light_black"
+            android:textSize="@dimen/font_size_secondary" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_light_white"
+        android:paddingLeft="@dimen/item_interior_space_medium"
+        android:text="可能认识的同学 ╭(′▽`)╯"
+        android:textColor="@color/main_light_black"
+        android:textSize="@dimen/font_size_secondary"
+        android:paddingBottom="@dimen/item_interior_space_small" />
+
+</LinearLayout>

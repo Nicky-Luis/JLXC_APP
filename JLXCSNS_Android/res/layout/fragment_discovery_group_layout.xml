@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/discovery_home_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/layout_title_rootview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height_size"
+        android:background="@color/main_yellow"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <View
+            android:id="@+id/view_title_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/main_clear" />
+
+        <LinearLayout
+            android:id="@+id/layout_discovey_group_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/selector_main_yellow_click"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" >
+
+            <TextView
+                android:id="@+id/text_discovery_group_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="话题频道"
+                android:textColor="@color/main_brown"
+                android:textSize="@dimen/action_bar_title_size" />
+
+            <ImageView
+                android:id="@+id/img_title_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/arrow_down_icon" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btn_more_operate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="@drawable/selector_main_yellow_click"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:src="@drawable/group_more_operate" />
+    </FrameLayout>
+
+    <com.jlxc.app.group.view.LoopViewPager
+        android:id="@+id/loop_view_page_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/group_viewpage_background" >
+    </com.jlxc.app.group.view.LoopViewPager>
+
+</LinearLayout>

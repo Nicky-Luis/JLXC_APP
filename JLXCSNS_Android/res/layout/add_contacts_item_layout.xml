@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.jlxc.app"
+    android:id="@+id/layout_contacts_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_deep_white_click"
+    android:clickable="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/item_interior_space_small" >
+
+    <com.jlxc.app.base.ui.view.RoundImageView
+        android:id="@+id/iv_contacts_head"
+        android:layout_width="@dimen/head_image_size_large"
+        android:layout_height="@dimen/head_image_size_large"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher"
+        app:rect_adius="2dp" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/item_interior_space_medium" >
+
+        <TextView
+            android:id="@+id/tv_contact_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/main_deep_black"
+            android:textSize="@dimen/font_size_medium" />
+
+        <TextView
+            android:id="@+id/tv_contacts_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/main_gary"
+            android:textSize="@dimen/font_size_small" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_contacts_add"
+        android:layout_width="75dip"
+        android:layout_height="wrap_content"
+        android:padding="7dip"
+	    android:text="关注"
+	    android:background="@color/main_orange"  
+	    android:textColor="@color/main_white"
+	    android:textSize="@dimen/font_size_small"/>
+
+</LinearLayout>

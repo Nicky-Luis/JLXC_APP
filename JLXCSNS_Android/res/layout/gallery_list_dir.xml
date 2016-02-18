@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_deep_white"
+    android:padding="@dimen/item_interior_space_small" >
+
+    <ListView
+        android:id="@+id/listview_galley_dir"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@color/main_light_white"
+        android:dividerHeight="1px"
+        android:listSelector="@drawable/selector_deep_white_click" >
+    </ListView>
+
+</RelativeLayout>

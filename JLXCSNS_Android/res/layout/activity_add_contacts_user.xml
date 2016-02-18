@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_deep_white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_title_bar" />
+    <!-- 手机联系人listview -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/listview_contacts_user"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/main_light_white"
+            android:dividerHeight="0.5dp"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="true"
+            android:headerDividersEnabled="false"
+            android:smoothScrollbar="true" >
+        </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+        <TextView
+            android:id="@+id/tv_contacts_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/item_interior_space_medium"
+            android:text="TextView"
+            android:textColor="@color/main_deep_black"
+            android:textSize="@dimen/font_size_small"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

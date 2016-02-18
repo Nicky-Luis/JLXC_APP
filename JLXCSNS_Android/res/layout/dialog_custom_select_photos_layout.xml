@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dialog_interior_size_large"
+    android:background="@color/main_light_white"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/tv_btn_camera"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dialog_interior_size_large"
+        android:layout_weight="1"
+        android:background="@drawable/selector_deep_white_click"
+        android:gravity="center" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:src="@drawable/select_photos_camera_normal" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_dividing"
+        android:layout_width="1px"
+        android:layout_height="@dimen/dialog_interior_size_large"
+        android:background="@color/main_light_white" />
+
+    <LinearLayout
+        android:id="@+id/tv_btn_galley"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dialog_interior_size_large"
+        android:layout_weight="1"
+        android:background="@drawable/selector_deep_white_click"
+        android:clickable="true"
+        android:gravity="center" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:src="@drawable/select_photos_gallery_normal" />
+    </LinearLayout>
+
+</LinearLayout>

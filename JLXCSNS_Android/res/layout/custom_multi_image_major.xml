@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_multi_pic_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/news_item_margins_top" >
+
+    <ImageView
+        android:id="@+id/iv_custom_picture_A"
+        android:layout_width="@dimen/image_size_major"
+        android:layout_height="@dimen/image_size_major"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/iv_custom_picture_B"
+        android:layout_width="@dimen/image_size_major"
+        android:layout_height="@dimen/image_size_major"
+        android:layout_alignTop="@+id/iv_custom_picture_A"
+        android:layout_marginLeft="@dimen/item_interior_space_small"
+        android:layout_toRightOf="@+id/iv_custom_picture_A"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/iv_custom_picture_C"
+        android:layout_width="@dimen/image_size_major"
+        android:layout_height="@dimen/image_size_major"
+        android:layout_alignTop="@+id/iv_custom_picture_A"
+        android:layout_marginLeft="@dimen/item_interior_space_small"
+        android:layout_toRightOf="@+id/iv_custom_picture_B"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/iv_custom_picture_D"
+        android:layout_width="@dimen/image_size_major"
+        android:layout_height="@dimen/image_size_major"
+        android:layout_below="@+id/iv_custom_picture_A"
+        android:layout_marginTop="@dimen/item_interior_space_small"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/iv_custom_picture_E"
+        android:layout_width="@dimen/image_size_major"
+        android:layout_height="@dimen/image_size_major"
+        android:layout_alignTop="@+id/iv_custom_picture_D"
+        android:layout_marginLeft="@dimen/item_interior_space_small"
+        android:layout_toRightOf="@+id/iv_custom_picture_D"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/iv_custom_picture_F"
+        android:layout_width="@dimen/image_size_major"
+        android:layout_height="@dimen/image_size_major"
+        android:layout_alignTop="@+id/iv_custom_picture_D"
+        android:layout_marginLeft="@dimen/item_interior_space_small"
+        android:layout_toRightOf="@+id/iv_custom_picture_E"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/iv_custom_picture_G"
+        android:layout_width="@dimen/image_size_major"
+        android:layout_height="@dimen/image_size_major"
+        android:layout_below="@+id/iv_custom_picture_D"
+        android:layout_marginTop="@dimen/item_interior_space_small"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/iv_custom_picture_H"
+        android:layout_width="@dimen/image_size_major"
+        android:layout_height="@dimen/image_size_major"
+        android:layout_alignTop="@+id/iv_custom_picture_G"
+        android:layout_marginLeft="@dimen/item_interior_space_small"
+        android:layout_toRightOf="@+id/iv_custom_picture_G"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/iv_custom_picture_I"
+        android:layout_width="@dimen/image_size_major"
+        android:layout_height="@dimen/image_size_major"
+        android:layout_alignTop="@+id/iv_custom_picture_G"
+        android:layout_marginLeft="@dimen/item_interior_space_small"
+        android:layout_toRightOf="@+id/iv_custom_picture_H"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/iv_custom_big_pic"
+        android:layout_width="@dimen/image_size_huge"
+        android:layout_height="@dimen/image_size_huge"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitStart"
+        android:visibility="gone"
+        android:src="@drawable/ic_launcher" />
+
+</RelativeLayout>

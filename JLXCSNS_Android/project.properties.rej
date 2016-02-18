@@ -1,0 +1,9 @@
+diff a/JLXCSNS_Android/project.properties b/JLXCSNS_Android/project.properties	(rejected hunks)
+@@ -12,7 +12,6 @@
+ 
+ # Project target.
+ target=android-20
+-android.library.reference.1=..\\..\\workspace\\RongIMKit
+ android.library.reference.1=../../adtWork/PullToRefresh
+ android.library.reference.2=../../adtWork/appcompat_v7
+ android.library.reference.3=../../adtWork/IMKit/src/main

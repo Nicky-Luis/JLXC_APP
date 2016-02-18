@@ -1,0 +1,74 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="action_bar_height_size">48dp</dimen>
+    <dimen name="action_bar_title_size">15sp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="font_size_sper_large">25sp</dimen>
+    <dimen name="font_size_huge">20sp</dimen>
+    <dimen name="font_size_large">18sp</dimen>
+    <dimen name="font_size_medium">16sp</dimen>
+    <dimen name="font_size_secondary">15sp</dimen>
+    <dimen name="font_size_small">14sp</dimen>
+    <dimen name="font_size_tiny">12sp</dimen>
+    <dimen name="font_size_micro">10sp</dimen>
+    <!-- 动态页边距 -->
+    <dimen name="news_item_margins_left">12dp</dimen>
+    <dimen name="news_item_margins_right">12dp</dimen>
+    <dimen name="news_item_margins_top">10dp</dimen>
+    <!-- item内部间距 -->
+    <dimen name="item_interior_space_little">2dp</dimen>
+    <dimen name="item_interior_space_small">5dp</dimen>
+    <dimen name="item_interior_space_medium">10dp</dimen>
+    <dimen name="item_interior_space_large">15dp</dimen>
+    <dimen name="item_interior_space_huge">20dp</dimen>
+    <!-- 自定义dialog相关尺寸 -->
+    <dimen name="dialog_interior_size_tiny">10dp</dimen>
+    <dimen name="dialog_interior_size_small">20dp</dimen>
+    <dimen name="dialog_interior_size_secondary">40dp</dimen>
+    <dimen name="dialog_interior_size_medium">50dp</dimen>
+    <dimen name="dialog_interior_size_large">110dp</dimen>
+    <!-- 校园title尺寸 -->
+    <dimen name="campus_title_high">30dp</dimen>
+    <!-- title相关的值 -->
+    <dimen name="title_interior_size_tiny">2dp</dimen>
+    <dimen name="title_interior_size_small">5dp</dimen>
+    <dimen name="title_interior_size_mediu">10dp</dimen>
+    <dimen name="title_interior_size_large">40dp</dimen>
+    <dimen name="title_interior_size_huge">100dp</dimen>
+    <!-- 头像的大小 -->
+    <dimen name="head_image_size_small">30dp</dimen>
+    <dimen name="head_image_size_medium">40dp</dimen>
+    <dimen name="head_image_size_large">50dp</dimen>
+    <dimen name="head_image_size_huge">55dp</dimen>
+    <dimen name="head_image_size_super_large">60dp</dimen>
+    <!-- 图片的大小 -->
+    <dimen name="image_size_small">80dp</dimen>
+    <dimen name="image_size_medium">90dp</dimen>
+    <dimen name="image_size_large">100dp</dimen>
+    <dimen name="image_size_major">120dp</dimen>
+    <dimen name="image_size_huge">200dp</dimen>
+    <!-- 子评论左边距 -->
+    <dimen name="subcomment_margins_left">62dp</dimen>
+
+    <!-- 聊天页面行上边距和下边距 -->
+    <dimen name="chatting_item_marging_top">10dp</dimen>
+    <dimen name="chatting_item_marging_bottom">10dp</dimen>
+    <!-- 聊天页面头像距左右边距 -->
+    <dimen name="chatting_headpic_margin">10dp</dimen>
+    <!-- 聊天页面气泡距头像边距 -->
+    <dimen name="chatting_pop_margin">5dp</dimen>
+    <!-- 聊天页面气泡的最大和最小宽度 -->
+    <dimen name="chatting_pop_maxwidth">239dp</dimen>
+    <dimen name="chatting_pop_minwidth">20dp</dimen>
+    <!-- 聊天页面用户名字体大小 -->
+    <dimen name="chatting_text_size">11sp</dimen>
+    <!-- 聊天页面头像大小 -->
+    <dimen name="chatting_headpic_width">55dp</dimen>
+    <dimen name="chatting_headpic_height">55dp</dimen>
+    <dimen name="attrament_img_width">50dp</dimen>
+    <dimen name="attrament_img_height">50dp</dimen>
+    <dimen name="attrament_img_margin_left">50dp</dimen>
+
+</resources>

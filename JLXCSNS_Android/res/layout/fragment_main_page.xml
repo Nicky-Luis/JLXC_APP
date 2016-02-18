@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/layout_main_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height_size"
+        android:background="@drawable/navbar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/layout_title_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/title_interior_size_huge"
+            android:layout_marginRight="@dimen/title_interior_size_huge"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_news_guid"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="动态圈"
+                android:textColor="@color/main_brown"
+                android:textSize="@dimen/action_bar_title_size" />
+
+            <TextView
+                android:id="@+id/tv_campus_guid"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="校 园"
+                android:textColor="@color/main_clear_brown"
+                android:textSize="@dimen/action_bar_title_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/title_interior_size_small"
+            android:gravity="left"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/img_cursor"
+                android:layout_width="@dimen/title_interior_size_large"
+                android:layout_height="@dimen/title_interior_size_tiny"
+                android:scaleType="fitXY"
+                android:src="@drawable/cursor_main" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_notify_btn"
+            android:layout_width="@dimen/action_bar_height_size"
+            android:layout_height="@dimen/action_bar_height_size"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/title_interior_size_mediu"
+            android:padding="@dimen/title_interior_size_small"
+            android:scaleType="fitCenter"
+            android:src="@drawable/selector_notification_click"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:flipInterval="30"
+            android:persistentDrawingCache="animation" />
+
+        <ImageView
+            android:id="@+id/img_publish_btn"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="right|bottom"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/selector_publish_btn_click" />
+    </FrameLayout>
+
+</LinearLayout>

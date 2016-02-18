@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/btn_news_like"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/item_interior_space_medium"
+    android:paddingLeft="@dimen/item_interior_space_medium"
+    android:paddingTop="@dimen/item_interior_space_medium" >
+
+    <ImageView
+        android:id="@+id/iv_custom_btn_like_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_like_normal" />
+
+    <TextView
+        android:id="@+id/tv_custom_btn_like"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right|center"
+        android:layout_marginRight="@dimen/item_interior_space_small"
+        android:gravity="center"
+        android:text="点赞"
+        android:textColor="@color/main_brown"
+        android:textSize="@dimen/font_size_small" />
+
+</FrameLayout>

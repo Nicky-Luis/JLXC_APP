@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:app1="http://schemas.android.com/apk/res/com.jlxc.app"
+    android:id="@+id/layout_group_news_title_rootview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_deep_white"
+    android:clickable="true"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/news_item_margins_left"
+    android:paddingRight="@dimen/news_item_margins_right"
+    android:paddingTop="@dimen/news_item_margins_top" >
+
+    <!-- 用户头像 -->
+
+    <com.jlxc.app.base.ui.view.RoundImageView
+        android:id="@+id/img_group_news_user_head"
+        android:layout_width="@dimen/head_image_size_large"
+        android:layout_height="@dimen/head_image_size_large"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher"
+        app1:rect_adius="2dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/item_interior_space_medium" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <!-- 昵称 -->
+
+            <TextView
+                android:id="@+id/txt_group_news_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_deep_white_click"
+                android:text="名字"
+                android:textColor="@color/main_deep_black"
+                android:textSize="@dimen/font_size_medium" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_group_news_user_school"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/item_interior_space_small"
+            android:background="@drawable/selector_deep_white_click"
+            android:drawableLeft="@drawable/school_icon"
+            android:drawablePadding="5dp"
+            android:gravity="left"
+            android:text="学校"
+             android:textColor="@color/main_clear_brown"
+            android:textSize="@dimen/font_size_tiny" />
+    </LinearLayout>
+
+</LinearLayout>

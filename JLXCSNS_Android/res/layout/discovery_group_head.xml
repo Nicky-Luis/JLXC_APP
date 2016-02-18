@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="false"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/category_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="200dip"
+            android:scaleType="centerCrop"
+            android:src="@drawable/group_main_background" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#66000000"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/category_name_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全部频道列表"
+                android:textColor="@color/main_deep_white"
+                android:textSize="@dimen/font_size_huge" />
+
+            <TextView
+                android:id="@+id/category_desc_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:maxLength="40"
+                android:text="全宇宙的事情都在这里讨论"
+                android:textColor="@color/main_deep_white"
+                android:textSize="@dimen/font_size_small" />
+        </LinearLayout>
+    </FrameLayout>
+    <!-- 分类 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_light_white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/item_interior_space_large"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv_group_rankings"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/main_deep_white"
+            android:drawablePadding="@dimen/item_interior_space_small"
+            android:drawableTop="@drawable/selector_friend_phonebook_click"
+            android:gravity="center"
+            android:padding="@dimen/item_interior_space_small"
+            android:text="热门圈子"
+            android:textColor="@color/main_light_black"
+            android:textSize="@dimen/font_size_secondary" />
+
+        <View
+            android:id="@+id/view_space"
+            android:layout_width="1dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/tv_group_latest"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/main_deep_white"
+            android:drawablePadding="@dimen/item_interior_space_small"
+            android:drawableTop="@drawable/selector_friend_schoolmate_click"
+            android:gravity="center"
+            android:padding="@dimen/item_interior_space_small"
+            android:text="最新加入"
+            android:textColor="@color/main_light_black"
+            android:textSize="@dimen/font_size_secondary" />
+
+        <View
+            android:id="@+id/view_space2"
+            android:layout_width="1dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/tv_group_random"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/main_deep_white"
+            android:drawablePadding="@dimen/item_interior_space_small"
+            android:drawableTop="@drawable/selector_friend_schoolmate_click"
+            android:gravity="center"
+            android:padding="@dimen/item_interior_space_small"
+            android:text="随便看看"
+            android:textColor="@color/main_light_black"
+            android:textSize="@dimen/font_size_secondary" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main_light_white"
+            android:paddingBottom="@dimen/item_interior_space_small"
+            android:paddingLeft="@dimen/item_interior_space_medium"
+            android:text="精选"
+            android:textColor="@color/main_light_black"
+            android:textSize="@dimen/font_size_secondary" />
+    </LinearLayout>
+
+</LinearLayout>

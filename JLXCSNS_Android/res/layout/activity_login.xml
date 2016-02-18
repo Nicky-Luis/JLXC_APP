@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="center_horizontal" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/login_back_image" />
+    <!--
+         <TextView
+        android:id="@+id/base_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dip"
+        android:text="登录"
+        android:textColor="@color/main_brown"
+        android:textSize="@dimen/action_bar_title_size" />
+    -->
+
+    <EditText
+        android:id="@+id/usernameEt"
+        android:layout_width="280dip"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dip"
+        android:background="@color/main_clear"
+        android:drawablePadding="10dp"
+        android:hint="请输入手机号码"
+        android:inputType="number"
+        android:maxLength="11"
+        android:padding="5dip"
+        android:singleLine="true"
+        android:textColor="@color/main_deep_black"
+        android:textColorHint="@color/login_edit_hint_color"
+        android:textSize="@dimen/font_size_medium" />
+
+    <ImageView
+        android:layout_width="280dip"
+        android:layout_height="1dip"
+        android:layout_alignLeft="@+id/usernameEt"
+        android:layout_below="@+id/usernameEt"
+        android:background="@drawable/login_edit_text_view" />
+
+    <Button
+        android:id="@+id/loginRegisterBtn"
+        android:layout_width="280dip"
+        android:layout_height="45dip"
+        android:layout_below="@id/usernameEt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dip"
+        android:background="@drawable/login_button"
+        android:text="登录/注册"
+        android:textColor="@color/main_brown"
+        android:textSize="@dimen/font_size_small" />
+
+</RelativeLayout>

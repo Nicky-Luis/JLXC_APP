@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+    -->
+    <!--
+    <declare-styleable name="RoundImageView">
+        <attr name="rect_adius" format="dimension"></attr>
+    </declare-styleable>
+    -->
+    <declare-styleable name="RoundImageView">
+        <attr name="rect_adius" format="dimension" />
+        <attr name="riv_border_width" format="dimension" />
+	    <attr name="riv_border_color" format="color" />
+	    <attr name="riv_mutate_background" format="boolean" />
+    	<attr name="riv_oval" format="boolean" />
+    	<attr name="android:scaleType" />
+    </declare-styleable>
+    <declare-styleable name="CircularImageView">
+        <attr name="border" format="boolean"></attr>
+        <attr name="border_width" format="dimension"></attr>
+        <attr name="border_color" format="color"></attr>
+        <attr name="shadow" format="boolean"></attr>
+    </declare-styleable>
+    <declare-styleable name="Theme">
+        <attr name="circularImageViewStyle" format="reference"></attr>
+        <attr name="roundImageViewStyle" format="reference"></attr>
+    </declare-styleable>
+
+    <!-- 图片大小 -->
+    <declare-styleable name="MultiImageView">
+        <attr name="islargesize" format="boolean" />
+    </declare-styleable>
+
+</resources>

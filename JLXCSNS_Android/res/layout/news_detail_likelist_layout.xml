@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/news_detail_likelist_rootview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_deep_white"
+    android:paddingLeft="@dimen/news_item_margins_left"
+    android:paddingRight="@dimen/news_item_margins_right"
+    android:orientation="vertical" >
+
+    <!-- 主页点赞头像列表 -->
+
+    <com.jlxc.app.news.ui.view.LikeImageListView
+        android:id="@+id/control_like_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

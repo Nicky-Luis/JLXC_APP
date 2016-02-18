@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.jlxc.app"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_white"
+    android:orientation="vertical">
+    
+  	<TextView
+       android:id="@+id/top_text_view"
+       android:paddingTop="5dp"
+       android:paddingBottom="5dp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="10dp"
+       android:visibility="gone"
+       android:textSize="11sp"
+       android:textColor="@color/main_deep_gary"
+       android:text="相关的人" />
+    
+    <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp">
+	    <com.jlxc.app.base.ui.view.RoundImageView
+	        app:rect_adius="2dip"
+	        android:id="@+id/head_image_view"
+	        android:layout_width="45dip"
+	        android:layout_height="45dip"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginLeft="10dp"
+	        android:src="@drawable/abc_ab_bottom_solid_light_holo" />
+	
+	    <TextView
+	        android:id="@+id/name_text_view"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="10dp"
+	        android:textSize="@dimen/font_size_medium"
+	        android:textColor="@color/main_deep_black"
+	        android:layout_toRightOf="@+id/head_image_view"
+	        android:text="测试姓名" />
+
+	    <Button
+	        android:id="@+id/add_image_button"
+	        android:layout_width="75dip"
+	        android:layout_height="wrap_content"
+	        android:layout_marginRight="10dip"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:padding="7dip"
+		    android:text="关注"
+		    android:background="@color/main_orange"  
+		    android:textColor="@color/main_white"
+		    android:textSize="@dimen/font_size_small" />
+	    
+		<View
+            android:layout_width="fill_parent"
+            android:layout_below="@+id/head_image_view"
+            android:layout_height="1dip"
+            android:layout_marginTop="10dip"
+            android:layout_marginLeft="10dip"
+			android:background="@color/main_light_gary" />		    
+
+	</RelativeLayout>
+    
+</LinearLayout>
+

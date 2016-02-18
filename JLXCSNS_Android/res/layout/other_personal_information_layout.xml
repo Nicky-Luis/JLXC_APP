@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+              <!-- 姓名 -->
+              <LinearLayout
+                  android:id="@+id/name_layout"
+                  android:layout_width="match_parent"
+                  android:layout_height="55dp"
+                  android:gravity="center_vertical"
+                  android:orientation="horizontal" >
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textSize="@dimen/font_size_small"
+                      android:textColor="@color/main_char_gary"
+                      android:layout_marginLeft="15dip"
+                      android:text="昵称" />
+
+                  <TextView
+                      android:id="@+id/name_text_view"
+                      android:textColor="@color/main_deep_black"
+                      android:textSize="@dimen/font_size_medium"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="15dip"/>
+                  
+              </LinearLayout>
+
+              <View
+                  android:layout_width="fill_parent"
+                  android:layout_height="1px"
+                  android:layout_marginLeft="20dip"
+                  android:background="@color/main_light_white" />
+              <!-- 签名 -->
+              <LinearLayout
+                  android:id="@+id/sign_layout"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center_vertical"
+                  android:orientation="horizontal" >
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="55dp"
+                      android:gravity="center_vertical"
+                      android:textSize="@dimen/font_size_small"
+                      android:textColor="@color/main_char_gary"
+                      android:layout_marginLeft="15dip"
+                      android:text="签名" />
+
+                  <TextView
+                      android:id="@+id/sign_text_view"
+                      android:textColor="@color/main_deep_black"
+                      android:textSize="@dimen/font_size_medium"
+                      android:layout_width="match_parent"
+                      android:padding="10dp"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="5dip" />
+
+              </LinearLayout>
+
+              <View
+                  android:layout_width="fill_parent"
+                  android:layout_height="1px"
+                  android:layout_marginLeft="20dip"
+                  android:background="@color/main_light_white" />
+              <!-- 生日 -->
+              <LinearLayout
+                  android:id="@+id/birth_layout"
+                  android:layout_width="match_parent"
+                  android:layout_height="55dp"
+                  android:gravity="center_vertical"
+                  android:orientation="horizontal" >
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textSize="@dimen/font_size_small"
+                      android:textColor="@color/main_char_gary"                        
+                      android:layout_marginLeft="15dip"
+                      android:text="生日" />
+
+                  <TextView
+                      android:id="@+id/birth_text_view"
+                      android:textColor="@color/main_deep_black"
+                      android:textSize="@dimen/font_size_medium"                        
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="15dip" />
+                  
+              </LinearLayout>
+
+              <View
+                  android:layout_width="fill_parent"
+                  android:layout_height="1px"
+                  android:layout_marginLeft="20dip"
+                  android:background="@color/main_light_white" />
+              
+              <!-- 性别 -->
+              <LinearLayout
+                  android:id="@+id/sex_layout"
+                  android:layout_width="match_parent"
+                  android:layout_height="55dp"
+                  android:gravity="center_vertical"
+                  android:orientation="horizontal" >
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textSize="@dimen/font_size_small"
+                      android:textColor="@color/main_char_gary"                        
+                      android:layout_marginLeft="15dip"
+                      android:text="性别" />
+
+                  <TextView
+                      android:id="@+id/sex_text_view"
+                      android:textColor="@color/main_deep_black"
+                      android:textSize="@dimen/font_size_medium"                          
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="15dip"/>
+              </LinearLayout>
+
+              <View
+                  android:layout_width="fill_parent"
+                  android:layout_height="1px"
+                  android:layout_marginLeft="20dip"
+                  android:background="@color/main_light_white" />
+              
+              <!-- 学校 -->
+              <LinearLayout
+                  android:id="@+id/school_layout"
+                  android:layout_width="match_parent"
+                  android:layout_height="55dp"
+                  android:gravity="center_vertical"
+                  android:orientation="horizontal" >
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textSize="@dimen/font_size_small"
+                      android:textColor="@color/main_char_gary"                          
+                      android:layout_marginLeft="15dip"
+                      android:singleLine="true"
+                      android:ellipsize="end"
+                      android:text="学校" />
+
+                  <TextView
+                      android:id="@+id/school_text_view"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textColor="@color/main_deep_black"
+                      android:textSize="@dimen/font_size_medium"  
+                      android:layout_marginLeft="15dip"/>
+                  
+              </LinearLayout>
+
+              <View
+                  android:layout_width="fill_parent"
+                  android:layout_height="1px"
+                  android:layout_marginLeft="20dip"
+                  android:background="@color/main_light_white" />
+              
+              <!-- 城市 -->
+              <LinearLayout
+                  android:id="@+id/city_layout"
+                  android:layout_width="match_parent"
+                  android:layout_height="55dp"
+                  android:gravity="center_vertical"
+                  android:orientation="horizontal" >
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textSize="@dimen/font_size_small"
+                      android:textColor="@color/main_char_gary"                          
+                      android:layout_marginLeft="15dip"
+                      android:text="城市" />
+
+                  <TextView
+                      android:id="@+id/city_text_view"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textColor="@color/main_deep_black"
+                      android:textSize="@dimen/font_size_medium"                          
+                      android:layout_marginLeft="15dip"/>
+              </LinearLayout>    
+    
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/subcomment_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_light_white"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/item_interior_space_small"
+    android:paddingRight="@dimen/item_interior_space_medium" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/subcomment_margins_left"
+        android:background="@drawable/selector_news_detail_comment_click"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/txt_sub_comment_by_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="10"
+                android:text="朱旺"
+                android:textColor="@color/main_brown"
+                android:textSize="@dimen/font_size_small" />
+
+            <TextView
+                android:id="@+id/txt_operate_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/item_interior_space_small"
+                android:text="回复:"
+                android:textColor="@color/main_light_black"
+                android:textSize="@dimen/font_size_small" />
+
+            <TextView
+                android:id="@+id/txt_by_sub_comment_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="10"
+                android:paddingLeft="@dimen/item_interior_space_small"
+                android:text="孙圣光"
+                android:textColor="@color/main_brown"
+                android:textSize="@dimen/font_size_small" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_sub_comment_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="2dp"
+            android:text="哈哈哈哈 ，你是个傻逼"
+            android:textColor="@color/main_light_black"
+            android:textSize="@dimen/font_size_small" />
+    </LinearLayout>
+
+</RelativeLayout>

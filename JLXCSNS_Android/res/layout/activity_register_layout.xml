@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/register_activity"
+    android:gravity="center_horizontal">
+    
+	<ImageView
+	    android:src="@drawable/login_back_image"
+	    android:scaleType="centerCrop" 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"/> 
+
+    <include layout="@layout/layout_title_bar" />
+    
+     <EditText
+         android:id="@+id/passwd_edittext"
+         android:layout_marginTop="150dip"
+         android:layout_centerHorizontal="true"
+         android:layout_width="280dip"
+         android:layout_height="wrap_content"
+         android:drawablePadding="10dp"
+         android:maxLength="24"
+         android:padding="5dip"
+         android:background="@color/main_clear"
+         android:hint="请输入密码"
+         android:textColorHint="@color/login_edit_hint_color"   
+         android:textColor="@color/main_deep_black"      
+         android:singleLine="true"
+         android:inputType="textPassword"
+         android:textSize="@dimen/font_size_medium" />  
+    
+     <ImageView
+         android:layout_alignLeft="@+id/passwd_edittext"
+         android:layout_below="@+id/passwd_edittext" 
+         android:background="@drawable/login_edit_text_view"
+         android:layout_width="280dip"
+         android:layout_height="1dip"/>      
+     
+     <TextView
+         android:layout_width="wrap_content" 
+         android:layout_height="wrap_content"
+         android:textSize="@dimen/font_size_tiny"
+         android:layout_marginTop="10dip"
+         android:text="密码长度只能是6到24位哦"
+         android:textColor="@color/main_brown"
+         android:layout_below="@+id/passwd_edittext"
+         android:layout_centerHorizontal="true"/>
+    
+     <Button
+         android:layout_centerHorizontal="true"
+         android:id="@+id/next_button"
+         android:layout_below="@id/passwd_edittext"
+         android:textSize="@dimen/font_size_small"
+         android:textColor="@color/main_brown"
+         android:layout_width="280dip"
+         android:background="@drawable/login_button"
+         android:layout_height="45dip"
+         android:layout_marginTop="40dip"
+         android:text="完成" />       
+     
+</RelativeLayout>

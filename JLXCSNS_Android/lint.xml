@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="MissingTranslation" severity="warning" />
+    <issue id="NewApi">
+        <ignore path="src/com/jlxc/app/news/ui/view/CustomTextView.java" />
+    </issue>
+    <issue id="UselessLeaf">
+        <ignore path="res/layout/news_detail_head_view.xml" />
+    </issue>
+</lint>

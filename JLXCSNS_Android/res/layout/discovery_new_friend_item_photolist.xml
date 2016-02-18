@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_photos_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_deep_white"
+    android:gravity="right|center_vertical"
+    android:orientation="horizontal"
+    android:paddingRight="@dimen/item_interior_space_small" >
+
+    <ImageView
+        android:id="@+id/iv_recommend_photo_A"
+        android:layout_width="@dimen/image_size_large"
+        android:layout_height="@dimen/image_size_large"
+        android:clickable="false"
+        android:cropToPadding="true"
+        android:padding="@dimen/item_interior_space_small"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/iv_recommend_photo_B"
+        android:layout_width="@dimen/image_size_large"
+        android:layout_height="@dimen/image_size_large"
+        android:clickable="false"
+        android:cropToPadding="true"
+        android:padding="@dimen/item_interior_space_small"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/iv_recommend_photo_C"
+        android:layout_width="@dimen/image_size_large"
+        android:layout_height="@dimen/image_size_large"
+        android:clickable="false"
+        android:cropToPadding="true"
+        android:padding="@dimen/item_interior_space_small"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher" />
+    <!--
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:scrollbars="none"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/liear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <com.jlxc.app.base.ui.view.NoScrollGridView
+                android:id="@+id/gv_recommend_photos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:horizontalSpacing="5dp"
+                android:numColumns="auto_fit"
+                android:stretchMode="spacingWidthUniform" >
+            </com.jlxc.app.base.ui.view.NoScrollGridView>
+        </LinearLayout>
+    </HorizontalScrollView>
+    -->
+
+</LinearLayout>

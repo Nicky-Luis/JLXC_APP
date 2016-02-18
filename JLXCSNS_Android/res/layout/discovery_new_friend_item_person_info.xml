@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.jlxc.app"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_deep_white"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/view_recommend_driver"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_interior_space_medium"
+        android:background="@color/main_light_white" />
+
+    <RelativeLayout
+        android:id="@+id/layout_recommend_info_rootview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/item_interior_space_medium" >
+
+        <com.jlxc.app.base.ui.view.RoundImageView
+            android:id="@+id/iv_recommend_head"
+            android:layout_width="@dimen/head_image_size_large"
+            android:layout_height="@dimen/head_image_size_large"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher"
+            app:rect_adius="2dp" />
+
+        <LinearLayout
+            android:id="@+id/layout_root_view_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/item_interior_space_medium"
+            android:layout_marginTop="@dimen/item_interior_space_small"
+            android:layout_toRightOf="@id/iv_recommend_head"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_recommend_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="10"
+                android:text="昵称"
+                android:textColor="@color/main_deep_black"
+                android:textSize="@dimen/font_size_medium" />
+
+            <TextView
+                android:id="@+id/tv_recommend_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="20"
+                android:text="标签"
+                android:textColor="@color/main_flesh"
+                android:textSize="@dimen/font_size_tiny" >
+            </TextView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_recommend_school"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/layout_root_view_tag"
+            android:layout_below="@+id/layout_root_view_tag"
+            android:layout_marginTop="@dimen/item_interior_space_small"
+            android:drawableLeft="@drawable/school_icon"
+            android:drawablePadding="@dimen/item_interior_space_small"
+            android:text="学校"
+            android:textColor="@color/main_gary"
+            android:textSize="@dimen/font_size_small" />
+
+        <Button
+            android:id="@+id/btn_recomment_add"
+            android:layout_width="75dip"
+            android:layout_height="30dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+	        android:text="关注"
+	        android:background="@color/main_yellow"  
+	        android:textColor="@color/main_brown"
+	        android:textSize="@dimen/font_size_small"/>
+        
+    </RelativeLayout>
+
+</LinearLayout>

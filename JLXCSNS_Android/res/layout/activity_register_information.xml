@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/main_light_white"
+    android:id="@+id/register_information_activity"
+    android:gravity="center_horizontal">
+    
+    <include layout="@layout/layout_title_bar" />
+
+    <com.jlxc.app.base.ui.view.CircularImageView
+        android:id="@+id/headImageView"
+        android:layout_marginTop="50dip"
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        android:src="@drawable/default_head_image_btn"/>
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+       	android:text="选个颜值爆表的头像吧~"
+        android:textSize="@dimen/font_size_small"
+        android:textColor="@color/main_deep_gary" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_marginTop="30dip"        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="性别"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:button="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/register_sex_boy" />
+
+        <RadioButton
+            android:id="@+id/radioFemale"
+            android:button="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dip"
+            android:background="@drawable/register_sex_girl"/>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/nameEt"
+        android:layout_marginTop="30dip" 
+        android:layout_width="230dip"
+        android:layout_height="wrap_content"
+        android:background="@color/main_white"
+        android:padding="8dip"
+        android:hint="来个爆炸的昵称"
+        android:textColorHint="@color/main_light_gary"
+        android:singleLine="true"
+        android:textSize="15sp" >
+
+    </EditText>
+
+    
+     <Button
+         android:id="@+id/confirmBtn"
+         android:textSize="@dimen/font_size_small"
+         android:textColor="@color/main_brown"
+         android:layout_width="230dip"
+         android:background="@drawable/login_button"
+         android:layout_height="38dip"
+         android:layout_marginTop="30dip"
+         android:text="完成" />     
+    
+<!--     <LinearLayout
+        android:id="@+id/confirmLayout" 
+        android:layout_width="wrap_content"
+		android:layout_marginTop="30dip"        
+        android:layout_height="wrap_content">
+        
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@color/main_clear"
+	        android:textColor="@color/main_brown"
+	        android:textSize="@dimen/font_size_small"
+	        android:text="确定" />    
+	    <ImageView 
+	        android:layout_marginLeft="5dip"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:src="@drawable/jump_btn"/>
+	    
+    </LinearLayout> -->
+
+       
+</LinearLayout>
+
+
+    

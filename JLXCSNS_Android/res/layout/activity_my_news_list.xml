@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_title_bar" />
+    <!-- 个人中心动态的listview -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_light_white" >
+
+        <LinearLayout
+            android:layout_width="@dimen/item_interior_space_huge"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/item_interior_space_medium"
+            android:orientation="vertical" >
+
+            <View
+                android:id="@+id/iv_time_line_backgroung"
+                android:layout_width="2dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/time_line"
+                android:visibility="gone"
+                android:scaleType="centerInside" />
+        </LinearLayout>
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/listview_my_news_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="#19000000"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:smoothScrollbar="true" />
+
+        <TextView
+            android:id="@+id/tv_my_news_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="然而什么都没有  ╮(╯_╰)╭"
+            android:textColor="@color/main_light_black"
+            android:textSize="@dimen/font_size_small"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.jlxc.app"
+    android:versionCode="57"
+    android:versionName="1.02" >
+
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+    <!-- 获取机型信息权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+
+    <!-- 查看 Wi-Fi 状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 查看网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 录音 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 控制振动器 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 防止设备休眠 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="21" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <application
+        android:name="com.jlxc.app.base.app.JLXCApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+
+        <!--
+        <activity
+            android:name="com.jlxc.app.demo.ui.activity.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        -->
+        <activity android:name="com.jlxc.app.demo.ui.activity.NextActivity" >
+        </activity>
+        <activity
+            android:name="com.jlxc.app.login.ui.activity.LaunchActivity"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.jlxc.app.base.ui.activity.MainTabActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light"
+            tools:ignore="NewApi" >
+        </activity>
+        <!-- 登录 -->
+        <activity android:name="com.jlxc.app.login.ui.activity.LoginActivity" >
+        </activity>
+        <activity android:name="com.jlxc.app.login.ui.activity.SecondLoginActivity" >
+        </activity>
+        <activity android:name="com.jlxc.app.login.ui.activity.VerifyActivity" >
+        </activity>
+        <activity android:name="com.jlxc.app.login.ui.activity.RegisterActivity" >
+        </activity>
+        <activity android:name="com.jlxc.app.login.ui.activity.RegisterInformationActivity" />
+        <activity android:name="com.jlxc.app.base.ui.activity.BigImgLookActivity" />
+        <activity android:name="com.jlxc.app.news.ui.activity.ChoiceLocationActivity" >
+        </activity>
+        <activity android:name="com.jlxc.app.base.ui.view.gallery.imageloader.GalleyActivity" >
+        </activity>
+        <!-- 个人 -->
+        <activity android:name="com.jlxc.app.personal.ui.activity.PersonalSignActivity" >
+        </activity>
+        <activity android:name="com.jlxc.app.login.ui.activity.SelectSchoolActivity" >
+        </activity>
+        <activity android:name="com.jlxc.app.personal.ui.activity.VisitListActivity" >
+        </activity>
+        <activity android:name="com.jlxc.app.personal.ui.activity.CommonFriendsActivity" >
+        </activity>
+        <activity android:name="com.jlxc.app.personal.ui.activity.OtherPersonalActivity" >
+        </activity>
+        <activity android:name="com.jlxc.app.personal.ui.activity.OtherPeopleFriendsActivity" >
+        </activity>
+        <activity android:name="com.jlxc.app.personal.ui.activity.OtherAttentOrFansActivity" >
+        </activity>
+        <activity android:name="com.jlxc.app.personal.ui.activity.MyFriendListActivity" >
+        </activity>
+        <activity android:name="com.jlxc.app.personal.ui.activity.MyFansListActivity" >
+        </activity>
+        <activity android:name="com.jlxc.app.personal.ui.activity.FriendListActivity" >
+        </activity>
+        <activity android:name="com.jlxc.app.personal.ui.activity.FriendSettingActivity" >
+        </activity>
+        <activity android:name="com.jlxc.app.personal.ui.activity.PersonalSettingActivity" >
+        </activity>
+        <activity android:name="com.jlxc.app.personal.ui.activity.AccountSettingActivity" >
+        </activity>
+        <activity android:name="com.jlxc.app.personal.ui.activity.MyCardActivity" >
+        </activity>
+        <activity android:name="com.jlxc.app.personal.ui.activity.AboutUsActivity" >
+        </activity>
+        <!-- 新闻 -->
+        <activity android:name="com.jlxc.app.news.ui.activity.CampusAllPersonActivity" >
+        </activity>
+        <activity android:name="com.jlxc.app.news.ui.activity.NewsDetailActivity" >
+        </activity>
+        <activity android:name="com.jlxc.app.news.ui.activity.PublishNewsActivity" >
+        </activity>
+        <activity android:name="com.jlxc.app.news.ui.activity.PublisPhotoHandelActivity" >
+        </activity>
+        <activity android:name="com.jlxc.app.news.ui.activity.CampusNewsActivity" >
+        </activity>
+        <activity android:name="com.jlxc.app.news.ui.activity.AllLikePersonActivity" >
+        </activity>
+        <activity android:name="com.jlxc.app.personal.ui.activity.MyNewsListActivity" >
+        </activity>
+        <!-- 首页 -->
+        <activity android:name="com.jlxc.app.news.ui.activity.CampusHomeActivity" >
+        </activity>
+        <activity android:name="com.jlxc.app.message.ui.activity.NewFriendsActivity" >
+        </activity>
+        <!-- 发现 -->
+        <activity android:name="com.jlxc.app.discovery.ui.avtivity.MipcaCaptureActivity" >
+        </activity>
+        <activity android:name="com.jlxc.app.discovery.ui.avtivity.QRCodeScanActivity" >
+        </activity>
+        <activity android:name="com.jlxc.app.discovery.ui.avtivity.SameSchoolActivity" >
+        </activity>
+        <activity android:name="com.jlxc.app.discovery.ui.avtivity.SearchUserActivity" >
+        </activity>
+        <activity android:name="com.jlxc.app.discovery.ui.avtivity.ContactsUserActivity" >
+        </activity>
+        <activity android:name="com.jlxc.app.discovery.ui.avtivity.DiscoveryHomeActivity" >
+        </activity>
+        <!-- 圈子 -->
+        <activity android:name="com.jlxc.app.group.ui.activity.CreateGroupActivity" >
+        </activity>
+        <activity android:name="com.jlxc.app.group.ui.activity.MyGroupListActivity" >
+        </activity>
+        <activity android:name="com.jlxc.app.group.ui.activity.GroupInfoActivity" >
+        </activity>
+        <activity android:name="com.jlxc.app.group.ui.activity.GroupNewsActivity" >
+        </activity>
+        <activity android:name="com.jlxc.app.group.ui.activity.MoreGroupListActivity" >
+        </activity>
+        <activity android:name="com.jlxc.app.group.ui.activity.GroupManageActivity" >
+        </activity>
+        <activity android:name="com.jlxc.app.group.ui.activity.GroupAllPersonActivity" >
+        </activity>
+        <!-- 会话 Activity -->
+        <activity
+            android:name="com.jlxc.app.message.ui.activity.ConversationActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.jlxc.app"
+                    android:pathPrefix="/conversation/"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+
+        <!-- <activity android:name="com.jlxc.app.login.ui.activity.RegisterInformationActivity" > -->
+        <!-- </activity> -->
+
+
+        <!-- begin imlib request -->
+
+        <activity
+            android:name="io.rong.voipkit.activity.CallSideActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="io.rong.imkit"
+                    android:pathPrefix="/VoIPCall"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="io.rong.voipkit.activity.CalledSideActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="io.rong.imkit"
+                    android:pathPrefix="/VoIPAccept"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="io.rong.imlib.ipc.RongService"
+            android:process=":ipc" >
+        </service>
+        <service android:name="io.rong.imlib.ReConnectService" />
+
+        <receiver android:name="io.rong.imlib.ConnectChangeReceiver" />
+        <receiver android:name="io.rong.imlib.ipc.PushMessageReceiver" >
+            <intent-filter>
+                <action android:name="io.rong.push.message" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="io.rong.imkit.tools.SelectPictureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="io.rong.imkit.tools.PreviewPictureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="io.rong.imkit.tools.RongWebviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="io.rong.imkit.widget.provider.TakingPicturesActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="io.rong.push.PushService"
+            android:process="io.rong.push" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="io.rong.push" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="io.rong.push.CommandService"
+            android:process="io.rong.push" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="io.rong.command" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="io.rong.push.PushReceiver"
+            android:process="io.rong.push" >
+            <intent-filter>
+                <action android:name="io.rong.imlib.action.push.heartbeat" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="io.rong.imlib.HeartbeatReceiver"
+            android:process=":ipc" />
+
+        <service android:name="io.yunba.android.core.YunBaService" >
+        </service>
+
+        <receiver android:name="io.yunba.android.core.YunBaReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.jlxc.app.base.receiver.PushReceiver" >
+            <intent-filter>
+                <action android:name="io.yunba.android.MESSAGE_RECEIVED_ACTION" />
+                <action android:name="io.yunba.android.PRESENCE_RECEIVED_ACTION" />
+                <action android:name="io.yunba.android.MESSAGE_CONNECTED_ACTION" />
+                <action android:name="io.yunba.android.MESSAGE_DISCONNECTED_ACTION" />
+
+                <category android:name="com.jlxc.app" />
+            </intent-filter>
+        </receiver>
+
+        <!-- rong -->
+        <meta-data
+            android:name="RONG_CLOUD_APP_KEY"
+            android:value="8brlm7ufr4fw3" />
+        <!-- end -->
+
+
+        <!-- 云巴部分 -->
+        <meta-data
+            android:name="YUNBA_APPKEY"
+            android:value="55c499f19477ebf5246955f3" />
+
+        <!-- 友盟部分 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="55c49ee5e0f55a501600021b" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="nicai" />
+        <!-- 高德部分 -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="19077737f995074601d57afc38a46358" />
+        <!-- 028a516dcc7ca5977934426ea33801ba -->
+        <!-- ab92e548a0429b832749d8067cb47998 -->
+        <!-- 19077737f995074601d57afc38a46358 -->
+
+
+        <!-- *******************涂图 公共分组控制器******************* -->
+        <activity
+            android:name="org.lasque.tusdk.impl.activity.TuFragmentActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+    </application>
+
+</manifest>

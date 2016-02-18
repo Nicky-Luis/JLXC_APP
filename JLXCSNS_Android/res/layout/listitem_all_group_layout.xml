@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_light_white"
+    android:paddingBottom="10dp" >
+
+    <LinearLayout
+        android:id="@+id/layout_group_item_rootview"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/selector_deep_white_click"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <ImageView
+            android:id="@+id/img_group_cover"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="10dp" >
+
+            <TextView
+                android:id="@+id/text_group_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:text=" "
+                android:textColor="@color/main_light_black"
+                android:textSize="@dimen/font_size_medium" />
+
+            <TextView
+                android:id="@+id/text_group_member_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15dp"
+                android:drawableLeft="@drawable/group_following_icon"
+                android:drawablePadding="2dp"
+                android:text=" "
+                android:textColor="@color/main_clear_brown"
+                android:textSize="@dimen/font_size_small" />
+
+            <TextView
+                android:id="@+id/text_group_news_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/text_group_member_count"
+                android:drawableLeft="@drawable/group_content_count_icon"
+                android:drawablePadding="2dp"
+                android:text=" "
+                android:textColor="@color/main_clear_brown"
+                android:textSize="@dimen/font_size_small" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

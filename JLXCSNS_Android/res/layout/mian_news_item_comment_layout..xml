@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_deep_white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout_comment_A"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/news_item_margins_left"
+        android:layout_marginRight="@dimen/news_item_margins_right"
+        android:background="@drawable/selector_deep_white_click"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txt_comment_nameA"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/item_interior_space_huge"
+            android:text="昵称"
+            android:textColor="@color/main_brown"
+            android:textSize="@dimen/font_size_small" />
+
+        <TextView
+            android:id="@+id/txt_comment_contentA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="评论的内容"
+            android:textColor="@color/main_light_black"
+            android:textSize="@dimen/font_size_small" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_comment_B"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/news_item_margins_left"
+        android:layout_marginRight="@dimen/news_item_margins_right"
+        android:background="@drawable/selector_deep_white_click"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txt_comment_nameB"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/item_interior_space_huge"
+            android:text="昵称"
+            android:textColor="@color/main_brown"
+            android:textSize="@dimen/font_size_small" />
+
+        <TextView
+            android:id="@+id/txt_comment_contentB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="评论的内容"
+            android:textColor="@color/main_light_black"
+            android:textSize="@dimen/font_size_small" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_comment_C"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/news_item_margins_left"
+        android:layout_marginRight="@dimen/news_item_margins_right"
+        android:background="@drawable/selector_deep_white_click"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txt_comment_nameC"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/item_interior_space_huge"
+            android:text="昵称"
+            android:textColor="@color/main_brown"
+            android:textSize="@dimen/font_size_small" />
+
+        <TextView
+            android:id="@+id/txt_comment_contentC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="评论的内容"
+            android:textColor="@color/main_light_black"
+            android:textSize="@dimen/font_size_small" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_more_comment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_interior_space_huge"
+        android:layout_marginLeft="@dimen/news_item_margins_left"
+        android:layout_marginRight="@dimen/news_item_margins_right"
+        android:text="查看更多评论"
+        android:textColor="@color/main_brown"
+        android:textSize="@dimen/font_size_small" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/item_interior_space_small"
+        android:layout_height="@dimen/news_item_margins_top"
+        android:background="@color/main_light_white" />
+
+</LinearLayout>

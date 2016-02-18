@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_title_bar" />
+
+    <GridView
+        android:id="@+id/gv_school_all_person"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/selector_deep_white_click"
+        android:columnWidth="@dimen/head_image_size_super_large"
+        android:horizontalSpacing="@dimen/item_interior_space_medium"
+        android:numColumns="auto_fit"
+        android:padding="@dimen/item_interior_space_medium"
+        android:scrollbars="none"
+        android:verticalSpacing="@dimen/item_interior_space_large" >
+    </GridView>
+
+</LinearLayout>

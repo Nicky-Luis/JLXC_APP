@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_campus_operate_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_deep_white"
+    android:clickable="true"
+    android:gravity="right"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/news_item_margins_left"
+    android:paddingRight="@dimen/news_item_margins_right" >
+
+    <!-- 评论按钮 -->
+
+    <com.jlxc.app.news.ui.view.CommentButton
+        android:id="@+id/btn_campus_reply"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+
+    <!-- 点赞按钮 -->
+
+    <com.jlxc.app.news.ui.view.LikeButton
+        android:id="@+id/btn_campus_like"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

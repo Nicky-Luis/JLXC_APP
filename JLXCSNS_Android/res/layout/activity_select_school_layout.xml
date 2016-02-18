@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa"
+    android:focusable="true"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_title_bar" />
+
+    <LinearLayout
+        android:id="@+id/ll_base_listview_search"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/main_light_gary"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/search_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@color/main_white"
+            android:hint="伙计你的学校是..."
+            android:padding="5dp"
+            android:textColor="@color/main_deep_black"
+            android:textSize="@dimen/font_size_small" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/school_list_title_textview"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="left|center"
+        android:paddingLeft="7dip"
+        android:text="猜你在这些学校(·ω＜)"
+        android:textColor="@color/main_deep_gary"
+        android:textSize="@dimen/font_size_tiny" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/school_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="#cccccc"
+            android:dividerHeight="0px"
+            android:listSelector="@drawable/selector_deep_white_click"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:headerDividersEnabled="false"
+            android:smoothScrollbar="true" >
+        </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+        <TextView
+            android:id="@+id/tv_school_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="TextView"
+            android:textColor="@color/main_light_black"
+            android:textSize="@dimen/font_size_small"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

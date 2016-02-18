@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    
+    <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_white"
+    android:paddingTop="10dp">
+	    <ImageView
+	        android:id="@+id/head_image_view"
+	        android:layout_width="45dip"
+	        android:layout_height="45dip"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginLeft="10dp"
+	        android:src="@drawable/abc_ab_bottom_solid_light_holo" />
+	
+	    <TextView
+	        android:id="@+id/name_text_view"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignTop="@+id/head_image_view"
+	        android:layout_marginTop="3dip"
+	        android:layout_marginLeft="10dp"
+	        android:textSize="@dimen/font_size_small"
+	        android:textColor="@color/main_deep_black"
+	        android:layout_toRightOf="@+id/head_image_view"
+	        android:text="测试姓名" />
+	
+	    <TextView
+	        android:id="@+id/school_text_view"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/font_size_tiny"
+	        android:layout_alignLeft="@+id/name_text_view"
+	        android:layout_alignBottom="@id/head_image_view"
+	        android:textColor="@color/main_deep_gary"
+	        android:text="学校" />
+	    
+		<View
+            android:layout_width="fill_parent"
+            android:layout_below="@+id/head_image_view"
+            android:layout_height="1dip"
+            android:layout_marginTop="10dip"
+            android:layout_marginLeft="10dip"
+			android:background="@color/main_light_gary" />		    
+	</RelativeLayout>
+    
+</LinearLayout>
+

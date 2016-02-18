@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HelloHa</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="str_back">返回</string>
+    <string name="str_register_title">注册</string>
+    <string name="str_register_phone_prompt">验证码已发送至手机：</string>
+    <string name="str_input_verificationcode_prompt">输入验证码哦...</string>
+    <string name="str_reacquire_verification">重新发送</string>
+    <string name="str_password_prompt">你的密码是什么...</string>
+    <string name="str_next">下一步</string>
+
+        <!-- Loading -->
+    <string name="login_loading_data">登录中,请稍后..</string>
+    <string name="loading_data">数据加载中，请稍候..</string>
+    <string name="loading_image">图片加载中，请稍候..</string>
+    <string name="loading_file">文件下载中，请稍候..</string>
+    <string name="sending_image">图片发送中，请稍候..</string>
+    <string name="sending_data">数据发送中，请稍候..</string>
+    <string name="sending_file">文件上传中，请稍候..</string>
+    <string name="loading">加载中，请稍候..</string>
+    <!-- Loading -->
+
+
+    <!-- Toast -->
+    <string name="toast_err_upload">数据提交失败,请检查网络</string>
+    <string name="toast_err_download">数据获取失败,请检查网络</string>
+    <!-- Toast -->
+
+
+    <!-- Alert -->
+    <string name="alert_title">提示</string>
+    <string name="alert_sure">确定</string>
+    <string name="alert_cancle">取消</string>
+    <string name="alert_finish">关闭</string>
+    <!-- Alert -->
+    
+    <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+    
+</resources>

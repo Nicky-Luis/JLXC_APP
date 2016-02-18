@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/main_white"
+    android:id="@+id/publish_news_layout">
+
+    <include layout="@layout/layout_title_bar" />
+    
+<!--         <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/layout_base_title" > -->
+    
+    <EditText
+        android:id="@+id/contentEt"
+        android:layout_marginTop="20dip"
+        android:layout_marginLeft="30dip"
+        android:layout_marginRight="30dip"
+        android:layout_width="match_parent"
+        android:layout_height="130dip"
+        android:gravity="top"
+        android:background="@drawable/comment_border"
+        android:hint="宣布点儿什么吧 o(*￣▽￣*)o ..."
+        android:padding="7dip"
+        android:maxLength="140"
+        android:textSize="@dimen/font_size_small"
+        android:inputType="textMultiLine" >
+        <requestFocus />
+    </EditText>
+
+    <RelativeLayout
+        android:id="@+id/addImageLayout"
+        android:layout_marginTop="10dip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <ImageView
+            android:id="@+id/addImageView"
+            android:layout_width="70dip"
+            android:layout_height="70dip"
+            android:layout_marginLeft="30dip"
+            android:scaleType="centerCrop"
+            android:src="@drawable/publish_add_btn" />
+        
+    </RelativeLayout>
+
+    <LinearLayout        
+        android:id="@+id/choice_location_layout" 
+        android:layout_marginTop="15dip"
+        android:layout_marginLeft="30dip"
+	    android:padding="0dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/location_back_image" 
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <ImageView 
+            android:layout_marginLeft="15dip"
+            android:layout_width="15dip"
+            android:layout_height="15dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/location_content_image"/>
+        
+        <TextView 
+            android:id="@+id/choice_location_text_view"
+            android:layout_marginLeft="2dip"
+            android:textColor="@color/main_deep_gary"
+            android:textSize="@dimen/font_size_tiny"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_marginRight="10dip"
+            android:text="告诉我你在哪里...."/>
+        
+    </LinearLayout>
+<!--     <Button
+		android:layout_marginTop="10dip"
+        android:id="@+id/choiceLocationBtn"
+        android:layout_marginLeft="30dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button" /> -->
+
+</LinearLayout>
